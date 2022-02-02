@@ -1,0 +1,68 @@
+/* Resets */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+header {
+  padding: 10px 15px;
+  background-color: rgb(94, 62, 33);
+}
+
+header h1 {
+  color: #eee;
+  font-size: 4vw;
+}
+
+.menu-items-container {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.menu-items-container li {
+  padding: 10px 0;
+}
+
+.menu-items-container a {
+  color: #eee;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.menu-items-container a:hover::after {
+  content: "";
+  width: 30%;
+  transition: width 0.4s ease;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.about-us-container {
+  padding: 25px;
+}
+
+.about-us-container h2 {
+  padding: 10px 5px;
+}
+
+.about-us-container p {
+  padding: 10px 0;
+}
+
+.more-about-btn {
+  margin-top: 50px;
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+
+.cold-drinks img {
+  width: 200px;
+}
+
+/* Media Querry 786px min-width */
