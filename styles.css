@@ -9,7 +9,10 @@ p {
 
 header {
   padding: 10px 15px;
-  background-color: rgb(94, 62, 33);
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url(Assets/header-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header h1 {
@@ -23,13 +26,15 @@ header h1 {
 }
 
 .menu-items-container li {
-  padding: 10px 0;
+  padding: 15px;
 }
 
 .menu-items-container a {
   color: #eee;
   text-decoration: none;
-  padding: 10px 5px;
+  padding: 10px 15px;
+  background-color: #111;
+  border-radius: 50px;
 }
 
 .menu-items-container a:hover::after {
@@ -68,6 +73,16 @@ main {
   color: #222;
 }
 
+.menu-containers {
+  max-height: 100%;
+  background: #999;
+}
+
+.menu-containers h2 {
+  padding: 10px 30px;
+  margin-top: 75px;
+}
+
 .cold-drinks-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -85,7 +100,7 @@ main {
 }
 
 .drinks-list img {
-  width: 200px;
+  width: 75%;
 }
 
 .drink-details {
