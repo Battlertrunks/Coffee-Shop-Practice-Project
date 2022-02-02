@@ -54,15 +54,51 @@ main {
   padding: 10px 0;
 }
 
+.more-about-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .more-about-btn {
   margin-top: 50px;
-  width: 100%;
-  display: block;
-  text-align: right;
+  background-color: beige;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #222;
+}
+
+.cold-drinks-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.drinks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  border: 2px #111 solid;
+  border-radius: 10px;
 }
 
 .cold-drinks img {
   width: 200px;
+}
+
+.drink-details {
+  text-align: center;
+}
+
+.drink-details h3 {
+  padding: 20px 0;
+}
+
+.drink-details p {
+  padding: 0 9px;
+  padding-bottom: 20px;
 }
 
 /* Media Querry 786px min-width */
