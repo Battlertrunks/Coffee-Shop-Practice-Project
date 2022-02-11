@@ -15,6 +15,8 @@ header {
     url(Assets/header-background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -35,6 +37,12 @@ header h1 {
 
 .sidebar-on {
   transform: translate(0%);
+}
+
+.close-btn {
+  position: fixed;
+  right: 15px;
+  top: 15px;
 }
 
 .menu-items-container {
