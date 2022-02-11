@@ -3,8 +3,10 @@ body,
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -20,27 +22,89 @@ header h1 {
   font-size: 4vw;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  background: #fff;
+  transition: all 0.3s linear;
+  transform: translate(100%);
+}
+
+.sidebar-on {
+  transform: translate(0%);
+}
+
 .menu-items-container {
+  margin-top: 3rem;
   list-style: none;
-  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-items-container li {
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .menu-items-container a {
-  color: #eee;
+  color: #222;
   text-decoration: none;
-  padding: 10px 15px;
-  background-color: #111;
+  padding: 15px 20px;
   border-radius: 50px;
+}
+
+.menu-items-container li::after {
+  content: "";
+  display: block;
+  margin: 2.5rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: #999;
 }
 
 .menu-items-container a:hover::after {
   content: "";
   width: 30%;
   transition: width 0.4s ease;
+}
+
+.find-shop {
+  text-align: right;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.find-shop li {
+  margin: 0 5px;
+}
+
+.find-shop a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px #111 solid;
+  border-radius: 50px;
+}
+
+.white-btn {
+  color: #111;
+}
+
+.white-btn:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.black-btn {
+  color: #fff;
+  background-color: #111;
+}
+
+.black-btn:hover {
+  color: #111;
+  background-color: #fff;
 }
 
 main {
